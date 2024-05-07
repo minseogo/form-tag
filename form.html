@@ -30,11 +30,32 @@
     .popupshow #popupform{
         display: block;
     }
+    form li p{
+        display: none;
+    }
+    input[type='text']:focus + p{
+        display: block;
+    }
+
     </style>
 </head>
 <body class="popupshow">
 
     <div id="popupform">
+
+        <form action="데이터저장할페이지" name = db명과같은 이름으로 한다.>
+            <!-- <input type="image" src ="경로"> -->
+            <ul>
+                <li>
+                    <label for = "wr_name">성함</label>
+                    <input type="text" name = "wr_name" placeholder="한글명만넣어주세요" id="wr_name">
+                    <p>한글이름만 반드시 써주셔야해요.</p>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <button type="button">작성하기</button>
+        </form>
         여기 폼태그 만든다
         <button>닫기</button>
     </div>
