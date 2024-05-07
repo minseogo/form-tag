@@ -35,8 +35,14 @@
     }
     input[type='text']:focus + p{
         display: block;
-    }
+    } /*type속성이 text인 input태그가 커서가 들어가면 그 아래 태그 p는 나타나라*/
 
+    /* a[href="none"]{
+        display: none;
+    }  */ /*링크값이 #none인 a태그는 출력하지말라 */
+    img[src$=".jpg"]{
+        display: none;
+    }
     </style>
 </head>
 <body class="popupshow">
